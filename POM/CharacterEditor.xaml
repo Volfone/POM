@@ -1,0 +1,30 @@
+﻿<Window x:Class="POM.CharacterEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POM"
+        mc:Ignorable="d"
+        Title="CharacterEditor" Height="301" Width="340" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="16,21,0,0" TextWrapping="Wrap" Text="Strength" VerticalAlignment="Top"/>
+        <TextBlock x:Name="StrMinV" HorizontalAlignment="Left" Margin="100,19,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="24" Width="24" TextAlignment="Center"/>
+        <Button x:Name="StrPlusBtn" Content="+" HorizontalAlignment="Left" Margin="129,19,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="PlusBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,63,0,0" TextWrapping="Wrap" Text="Dexterity" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DexMinV" HorizontalAlignment="Left" Margin="100,61,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="24" Width="24" TextAlignment="Center"/>
+        <Button x:Name="DexPlusBtn" Content="+" HorizontalAlignment="Left" Margin="129,61,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="PlusBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,139,0,0" TextWrapping="Wrap" Text="Constitution" VerticalAlignment="Top"/>
+        <TextBlock x:Name="ConMinV" HorizontalAlignment="Left" Margin="100,137,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="24" Width="24" TextAlignment="Center"/>
+        <Button x:Name="ConPlusBtn" Content="+" HorizontalAlignment="Left" Margin="129,137,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="PlusBtn_Click"/>
+        <TextBlock x:Name="IntMinV" HorizontalAlignment="Left" Margin="100,174,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="24" Width="24" TextAlignment="Center"/>
+        <Button x:Name="IntPlusBtn" Content="+" HorizontalAlignment="Left" Margin="129,174,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="PlusBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,176,0,0" TextWrapping="Wrap" Text="Intelligence" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,102,0,0" TextWrapping="Wrap" Text="Luck" VerticalAlignment="Top"/>
+        <TextBlock x:Name="LucMinV" HorizontalAlignment="Left" Margin="100,100,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="24" Width="24" TextAlignment="Center"/>
+        <Button x:Name="LucPlusBtn" Content="+" HorizontalAlignment="Left" Margin="129,100,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="PlusBtn_Click"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,23,63,0" TextWrapping="Wrap" Text="Skill points" VerticalAlignment="Top"/>
+        <TextBox x:Name="TotalPointsTB" HorizontalAlignment="Right" Margin="0,21,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" UndoLimit="10" Text="15" IsEnabled="False"/>
+        <Button x:Name="ApplyBtn" Content="Apply" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Click="ApplyBtn_Click"/>
+
+    </Grid>
+</Window>
